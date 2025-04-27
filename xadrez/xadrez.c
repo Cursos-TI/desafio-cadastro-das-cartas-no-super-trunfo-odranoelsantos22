@@ -33,7 +33,6 @@ printf("desafio xadrez!\n");
     //mostrar carta2
     printf("=carta2=\n");
     printf("estado: %c\n", estado2);
-    printf("estado: %d\n", estado2);
     printf("codigo: %s\n", codigo2);
     printf("nome da cidade: %s\n",nome_da_cidade2);
     printf("populacao: %d habitantes\n", populacao2);

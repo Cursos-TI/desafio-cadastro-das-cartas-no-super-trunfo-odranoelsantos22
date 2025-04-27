@@ -26,18 +26,18 @@ printf("desafio xadrez!\n");
     printf("codigo: %s\n",codigo1);
     printf("nome da cidade: %s\n", nome_da_cidade1);
     printf("populacao: %d habitantes\n",populacao1);
-    printf("area: %2f km²\n", area1);
-    printf("pib: %2f km²\n", pib1);
-    printf("numero de pontos turisticos:%d\n", numeros_de_pontos_turisticos1);
+    printf("area: %.2f km²\n", area1);
+    printf("pib: %.2f km²\n", pib1);
+    printf("numeros de pontos turisticos:%d\n", numeros_de_pontos_turisticos1);
     
     //mostrar carta2
     printf("=carta2=\n");
     printf("estado: %c\n", estado2);
-    printf("codigo: %s\n", codigo2);
+    printf("estado: %c\n", estado2);
     printf("nome da cidade: %s\n",nome_da_cidade2);
     printf("populacao: %d habitantes\n", populacao2);
-    printf("area: %2f km²\n" , area2);
-    printf("pib: %2f km²\n", pib2);
+    printf("area: %2.f km²\n" , area2);
+    printf("pib: %.2f km²\n", pib2);
     printf("numeros de pontos turisticos: %d\n", numeros_de_pontos_turisticos2);
 
 

@@ -2,6 +2,7 @@
 
 int main(){
 printf("desafio xadrez!\n");
+
     // Dados da Carta 1
     char estado1 = 'A';
     char codigo1[50] = "A01";
@@ -20,6 +21,14 @@ printf("desafio xadrez!\n");
     float pib2 = 300.50; 
     int numeros_de_pontos_turisticos2 = 30;
 
+    // Cálculos carta 1
+    float densidade1 = populacao1 / area1;
+    float pib_per_capita1 = (pib1 * 1000000000) / populacao1;
+
+    // Cálculos carta 2
+    float densidade2 = populacao2 / area2;
+    float pib_per_capita2 = (pib2 * 1000000000) / populacao2;
+
     //mostrar carta1
     printf("=carta1=\n"); 
     printf("estado: %c\n",estado1);
@@ -29,7 +38,11 @@ printf("desafio xadrez!\n");
     printf("area: %.2f km²\n", area1);
     printf("pib: %.2f km²\n", pib1);
     printf("numeros de pontos turisticos:%d\n", numeros_de_pontos_turisticos1);
-    
+    printf("Densidade Populacional: %.2f hab/km²\n", densidade1);
+    printf("PIB per Capita: %.2f reais\n", pib_per_capita1);
+
+    printf("\n");
+
     //mostrar carta2
     printf("=carta2=\n");
     printf("estado: %c\n", estado2);
@@ -39,7 +52,8 @@ printf("desafio xadrez!\n");
     printf("area: %2.f km²\n" , area2);
     printf("pib: %.2f km²\n", pib2);
     printf("numeros de pontos turisticos: %d\n", numeros_de_pontos_turisticos2);
-
+    printf("Densidade Populacional: %.2f hab/km²\n", densidade2);
+    printf("PIB per Capita: %.2f reais\n", pib_per_capita2);
 
 return 0;
 

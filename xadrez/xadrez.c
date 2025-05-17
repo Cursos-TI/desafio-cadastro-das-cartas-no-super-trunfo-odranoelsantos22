@@ -20,6 +20,7 @@ printf("desafio xadrez!\n");
     float area2 = 1200.25;
     float pib2 = 300.50; 
     int numeros_de_pontos_turisticos2 = 30;
+    char nome1[50], nome2[50];
 
     // Cálculos carta 1
     float densidade1 = populacao1 / area1;
@@ -55,6 +56,48 @@ printf("desafio xadrez!\n");
     printf("Densidade Populacional: %.2f hab/km²\n", densidade2);
     printf("PIB per Capita: %.2f reais\n", pib_per_capita2);
 
-return 0;
+     // Comparação de Cartas:
+    printf("\n===== COMPARAÇÃO =====\n");
 
+    if (populacao1 > populacao2) {
+        printf("População: %s venceu!\n", nome1);
+    } else if (populacao2 > populacao1) {
+        printf("População: %s venceu!\n", nome2);
+    } else {
+        printf("População: Empate!\n");
+    }
+
+    if (area1 > area2) {
+        printf("Área: %s venceu!\n", nome1);
+    } else if (area2 > area1) {
+        printf("Área: %s venceu!\n", nome2);
+    } else {
+        printf("Área: Empate!\n");
+    }
+
+    if (pib1 > pib2) {
+        printf("PIB: %s venceu!\n", nome1);
+    } else if (pib2 > pib1) {
+        printf("PIB: %s venceu!\n", nome2);
+    } else {
+        printf("PIB: Empate!\n");
+    }
+
+    if (densidade1 > densidade2) {
+        printf("Densidade: %s venceu!\n", nome1);
+    } else if (densidade2 > densidade1) {
+        printf("Densidade: %s venceu!\n", nome2);
+    } else {
+        printf("Densidade: Empate!\n");
+    }
+
+    if (pib_per_capita1 > pib_per_capita2) {
+        printf("PIB per capita: %s venceu!\n", nome1);
+    } else if (pib_per_capita2 > pib_per_capita1) {
+        printf("PIB per capita: %s venceu!\n", nome2);
+    } else {
+        printf("PIB per capita: Empate!\n");
+    }
+
+    return 0;
 }
